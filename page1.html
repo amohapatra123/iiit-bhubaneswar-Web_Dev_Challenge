@@ -2,39 +2,74 @@
 <html>
 <head>
 	<title>Weather App</title>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+	<!-- BOOTSTRAP CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"><!-- 
+JQERY CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+<!-- ANIMATE.CSS CDN -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
  <link rel="stylesheet" type="text/css" href="page1.css">
 </head>
 <body>
-	<div class="heading">
-		<h1>Weather App</h1>
-	</div>
-	<div class="main">
-		<div class="search">
-			<input  class="form-control"type="text" placeholder="Enter City Name"><br>
-
-		    <button class="btn btn-primary" style="outline: none;">Search</button> 
-		</div>
-
-
-		<div class="details">
-			<div class="placename">
-				<h1>London</h1>
+	<nav class="navbar navbar-default" id="nav_bar">
+		<div class="container">
+			<div class="navbar-header">
+				<a href="" class="navbar-brand navbar-link Weather">
+					<img src="" alt=""><strong>Weather App</strong>
+				</a>
+				<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="navcol">
+					<span class="sr-only">Toogle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+                   <span class="icon-bar"></span>					
+				</button>
 			</div>
-			<div class="temp"> 20<sup>o</sup>C
-			</div>
-			<div class="description"><h3>Partly cloudy</h3></div>
-			<div class="wind">
-				<p>Wind Speed:60kmph</p>
-				<p>Humidity:24cm</p>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right" id="nav_list">
+					<li><a href="main.html">Home</a></li>
+					
+					
+				</ul>
 			</div>
 		</div>
+		
+	</nav>
+	<div class="jumbotron" style="margin-bottom:0px;background-color: #4aa1f3">
+		<h2  class="text-center"
+		style="font-size: 50px;font-weight: 600;">Get current Weather Details</h2>
 	</div>
+	<div class="container">
+		<div class="row" id="cityDiv">
+			<div class="col-md-12">
+				<h3 class="text-center text-primary">Enter city name</h3>
+			</div>
+			<div class="row form-group form-inline" id="cityDiv">
+				<input type="text" name="city" id="city" class="form-control"placeholder="Enter city name">
+              <button id="submitCity" class="btn btn-primary">Search</button>
+			</div>
+			
+		</div>
+	</div>
+	
+	</div>
+
+	
+	<div class="Details">
+		<div class="cityname">
+			<h1>London</h1>
+	    </div>
+	    <div class="temp">
+	    	<h1>20<sup>o</sup>C</h1>
+	    </div>
+	    <div class="detail1">
+	    	<h1>Partly Clouded</h1>
+	    </div>
+	    <div class="detail2">
+	    	<h3>Wind Speed:50kmph</h3>
+	    </div>
+			
+    </div>
+
 
 </body>
 </html>

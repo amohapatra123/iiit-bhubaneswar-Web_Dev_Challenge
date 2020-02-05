@@ -1,47 +1,51 @@
-.main{
-	width: 400px;
-	height: 550px;
-	padding: 20px;
-	margin-top:30px;
-	margin-left: 38%;
-	background: white;
-	opacity:0.8;
+body{
+	font-family: 'Tangerine',serif;
+	background-color: white;
+	font-size:20px;
+	margin:0;
+	padding:0;
+}
+#nav_bar{
+	margin-bottom:0px;
+	padding:0;
+	background-color: white;
+}
+.weather{
+	color: #4aa1f3 !important;
+	font-size:25px;
+	font-weight:600;
+}
+#nav_list li a{
+	color:#4aa1f3 !important;
+	font-weight: 500;
+}
+#cityDiv{
+	width:60%;
+	margin:auto;
+	text-align: center;
+
+}
+input[type='text']{
+	height:40px;
+	font-size:20px;
+}
+#submitCity{
+	height:40px;
+	font-weight:bold;
+}
+.Details{
+	background-color: #4aa1f3;
+	text-align: center;
+	width:600px;
+	margin-left:450px;
 	border-radius: 10px;
 
-}
-.search {
-	display: inline-block;
-	align-items: center;
 
 }
-body{
-	background: #00B4DB;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+.cityname h1{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 60px;
 }
-h1{
-	color: black;
-	font-family: 'Pacifico', cursive;
-	text-align: center;
-	font-size: 50px;
-}
-.img img{
- width: 100%;
-
-
-}
-.mainimg{
-	width:20px;
-}
-.temp{
-	text-align: center;
-	margin:40px;
-	font-size: 80px;
-}
-.description{
-	text-align: center;
-}
-.wind{
-	text-align: center;
+.temp h1{
+	font-size:100px;
 }
