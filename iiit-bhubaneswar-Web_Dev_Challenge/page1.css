@@ -1,0 +1,51 @@
+body{
+	font-family: 'Tangerine',serif;
+	background-color: white;
+	font-size:20px;
+	margin:0;
+	padding:0;
+}
+#nav_bar{
+	margin-bottom:0px;
+	padding:0;
+	background-color: white;
+}
+.weather{
+	color: #4aa1f3 !important;
+	font-size:25px;
+	font-weight:600;
+}
+#nav_list li a{
+	color:#4aa1f3 !important;
+	font-weight: 500;
+}
+#cityDiv{
+	width:60%;
+	margin:auto;
+	text-align: center;
+
+}
+input[type='text']{
+	height:40px;
+	font-size:20px;
+}
+#submitCity{
+	height:40px;
+	font-weight:bold;
+}
+.Details{
+	background-color: #4aa1f3;
+	text-align: center;
+	width:600px;
+	margin-left:450px;
+	border-radius: 10px;
+
+
+}
+.cityname h1{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 60px;
+}
+.temp h1{
+	font-size:100px;
+}

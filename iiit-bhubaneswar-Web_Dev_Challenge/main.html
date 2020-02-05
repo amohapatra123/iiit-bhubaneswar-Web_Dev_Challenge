@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+	<link rel="stylesheet" type="text/css" href="stylemain.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body >
+	<div id="loader">
+		
+	</div>
+
+<div class="maindiv">
+
+  <nav class="navbar navbar-inverse" id="nav" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+     	
+    </div>
+    <ul class="nav navbar-nav" >
+      <li class="active" ><a href="file:///D:/programming/projects/iiit-bhubaneswar-Web_Dev_Challenge/main.html">Home</a></li>
+      <li><a href="file:///D:/programming/projects/iiit-bhubaneswar-Web_Dev_Challenge/page1.html">Page 1</a></li>
+      <li><a href="file:///D:/programming/projects/iiit-bhubaneswar-Web_Dev_Challenge/page2.html">Page 2</a></li>
+      <li><a href="file:///D:/programming/projects/iiit-bhubaneswar-Web_Dev_Challenge/page3.html">Page 3</a></li>
+    </ul>
+  </div>
+</nav>
+
+	
+</div>
+<marquee><p class="text">Web Dev Challenge</p></marquee>
+
+
+<script type="text/javascript">
+	var preloader;
+	function loadNow(opacity){
+		if(opacity<=0){
+			displayContent();
+		}
+		else{
+			loader.style.opacity=opacity;
+			window.setTimeout(function(){
+				loadNow(opacity-0.05)
+			},100);
+		}
+	}
+	function displayContent(){
+		loader.style.display='none';
+		document.getElementById('content').style.display='block';
+	}
+	document.addEventListener("DOMContentLoaded",function(){
+		loader=document.getElementById('loader');
+		loadNow(1);
+
+	});
+</script>
+</body>
+</html>
